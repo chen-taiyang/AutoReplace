@@ -81,38 +81,31 @@
 
 #### 修改前各设备配置
 
-- PC-1
-- ![image-20220901212112672](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212112672.png)
+- PC-1![image-20220901212112672](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212112672.png)
 
 
 
-- PC-2!
-- [image-20220901212705735](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212705735.png)
+- PC-2![image-20220901212705735](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212705735.png)
 
 
 
-- R1接口
-- ![image-20220901212814358](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212814358.png)
+- R1接口![image-20220901212814358](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212814358.png)
 
 
 
-- R1路由
-- <img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212857640.png" alt="image-20220901212857640" style="zoom:70%;" />
+- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212857640.png" alt="image-20220901212857640" style="zoom:70%;" />
 
 
 
-- R2接口
-- <img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213028982.png" alt="image-20220901213028982" style="zoom:70%;" />
+- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213028982.png" alt="image-20220901213028982" style="zoom:70%;" />
 
 
 
-- R2路由
-- ![image-20220901213111000](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213111000.png)
+- R2路由![image-20220901213111000](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213111000.png)
 
 
 
-- 测试静态路由
-- ![image-20220901213252142](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213252142.png)
+- 测试静态路由![image-20220901213252142](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213252142.png)
 
 ------
 
