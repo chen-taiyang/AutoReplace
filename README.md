@@ -81,7 +81,8 @@
 
 #### 修改前各设备配置
 
-- PC-1![image-20220901212112672](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212112672.png)
+- PC-1
+![image-20220901212112672](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212112672.png)
 
 
 
