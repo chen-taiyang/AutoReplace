@@ -1,4 +1,4 @@
-# 自动修改GNS3中Cisco配置文件中的IP地址
+#自动修改GNS3中Cisco配置文件中的IP地址
 
 ## 设计初衷
 
@@ -70,8 +70,7 @@
 
 #### 拓扑图
 
-![拓扑图模板](https://user-images.githubusercontent.com/107973104/188042039-39d00788-1472-4313-b6b4-64f9c9e8bf1d.png)
-
+![image-20220901175705288](F:%5C%E6%A1%8C%E9%9D%A2%5CAutoReplace%5Cstaric-router%5C%E6%8B%93%E6%89%91%E5%9B%BE%E6%A8%A1%E6%9D%BF.png)
 
 > 注意自己将拓扑时结构需和参考拓扑完全一样，包括接口、路由器名称
 >
@@ -93,11 +92,11 @@
 
 
 
-- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212857640.png" alt="image-20220901212857640" style="zoom:70%;" />
+- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901212857640.png" alt="image-20220901212857640" style="zoom:80%;" />
 
 
 
-- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213028982.png" alt="image-20220901213028982" style="zoom:70%;" />
+- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901213028982.png" alt="image-20220901213028982" style="zoom:80%;" />
 
 
 
@@ -125,19 +124,19 @@
 
 
 
-- R1接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214216174.png" alt="image-20220901214216174" style="zoom:70%;" />
+- R1接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214216174.png" alt="image-20220901214216174" style="zoom:80%;" />
 
 
 
-- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214258248.png" alt="image-20220901214258248" style="zoom:70%;" />
+- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214258248.png" alt="image-20220901214258248" style="zoom:80%;" />
 
 
 
-- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214357534.png" alt="image-20220901214357534" style="zoom:70%;" />
+- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214357534.png" alt="image-20220901214357534" style="zoom:80%;" />
 
 
 
-- R2路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214503320.png" alt="image-20220901214503320" style="zoom:70%;" />
+- R2路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901214503320.png" alt="image-20220901214503320" style="zoom:80%;" />
 
 
 
@@ -165,19 +164,19 @@
 
 
 
-- R1接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215802807.png" alt="image-20220901215802807" style="zoom:70%;" />
+- R1接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215802807.png" alt="image-20220901215802807" style="zoom:80%;" />
 
 
 
-- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215845744.png" alt="image-20220901215845744" style="zoom:70%;" />
+- R1路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215845744.png" alt="image-20220901215845744" style="zoom:80%;" />
 
 
 
-- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215936103.png" alt="image-20220901215936103" style="zoom:70%;" />
+- R2接口<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215936103.png" alt="image-20220901215936103" style="zoom:80%;" />
 
 
 
-- R2路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901220015200.png" alt="image-20220901220015200" style="zoom:70%;" />
+- R2路由<img src="https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901220015200.png" alt="image-20220901220015200" style="zoom:80%;" />
 
 
 
