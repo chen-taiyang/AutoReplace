@@ -1,4 +1,4 @@
-# 自动修改GNS3中Cisco配置文件中的IP地址
+#自动修改GNS3中Cisco配置文件中的IP地址
 
 ## 设计初衷
 
@@ -45,19 +45,29 @@
 
    > 这种模式有点繁琐，建议第一种
 
-   这时候你需要在config.txt中输入以下格式的内容：
+   这时候运行程序，你先需要输入 3；程序会自动把要修改的所有IP地址写入config.txt文件中：
 
-   原IP地址->修改后的IP地址   如图所示：
+   ![image-20220912143234375](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220912143234375.png)
 
+   
+
+   这时候打开config.txt 文件进行修改：
+
+   ![image-20220912143426773](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220912143426773.png)
+
+   
+   
+原IP地址->修改后的IP地址   如图所示：
+   
    ![image-20220901182456036](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901182456036.png)
-
+   
    > 必须按照这样输入（代码一天赶出来的，有时间慢慢优化，这算训练用户吗？）
-
+   
    注意事项：
-
+   
    - 修改后的IP需自己规划好
    - 不仅只有接口的地址需要更换还有**路由协议中的网段也需要更换**
-
+   
    ​      如图所示：红框中为路由协议中的网段
 
 ![image-20220901182756512](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901182756512.png)
@@ -70,7 +80,7 @@
 
 #### 拓扑图
 
-![拓扑图模板](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGo%E6%8B%93%E6%89%91%E5%9B%BE%E6%A8%A1%E6%9D%BF.png)
+![img](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGo68747470733a2f2f74616979616e672d70696374757265732d313330383339313735322e636f732e61702d6e616e6a696e672e6d7971636c6f75642e636f6d2f506963476f2545362538422539332545362538392539312545352539422542452545362541382541312545362539442542462e706e67)
 
 > 注意自己将拓扑时结构需和参考拓扑完全一样，包括接口、路由器名称
 >
@@ -146,6 +156,8 @@
 
 #### 使用第2种模式（完全修改IP地址）
 
+运行程序先输入3，然后修改config.txt文件，然后重新运行程序输入2
+
 修改config.txt文件![image-20220901215225662](https://taiyang-pictures-1308391752.cos.ap-nanjing.myqcloud.com/PicGoimage-20220901215225662.png)
 
 > 这种模式不是只有接口地址需要替换，还有路由协议中的网段，其中红框部分就是静态路由中的目的网段
@@ -197,35 +209,13 @@
   │  │  AutoReplace.exe	// 可执行程序
   │  │  AutoReplace.py	// 源码
   │  │
-  │  └─static-route
-      │  static-route.gns3     // 拓扑图，可直接用GNS3打开
-      │
-      ├─config                     // 配置文件目录，将AutoReplace.exe拖入此文件夹
-      │      config.txt            // 你要修改的配置文件
-      │      PC-1_startup.vpc
-      │      PC-2_startup.vpc
-      │      R1_configs_i1_startup-config.cfg
-      │      R2_configs_i2_startup-config.cfg
-      │
-      └─project-files
-          ├─dynamips
-          │  ├─17fcbe1d-7ca9-459a-9886-d4358daba5fd
-          │  │  └─configs
-          │  │          i2_startup-config.cfg
-          │  │
-          │  └─50cd8375-2376-43cc-9a39-711ea8840546
-          │      └─configs
-          │              i1_startup-config.cfg
-          │
-          ├─images
-          └─vpcs
-              ├─0a00ab6b-b575-4277-a835-40d99070d1cc
-              │      startup.vpc
-              │      vpcs.log
-              │
-              └─47b1b401-bf28-42b4-9fae-9cff9cd70477
-                      startup.vpc
-                      vpcs.log
+  │  └─staric-router           // 配置名称
+  │          config.txt
+  │          PC-1_startup.vpc
+  │          PC-2_startup.vpc
+  │          R1_configs_i1_startup-config.cfg
+  │          R2_configs_i2_startup-config.cfg
+  │          拓扑图模板.png
   ```
 
 - 你只需要按需修改config.txt文件，然后将AutoReplace.exe拖入到对应配置名称的文件夹中，双击运行即可

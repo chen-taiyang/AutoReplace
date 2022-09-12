@@ -130,6 +130,37 @@ def removeTempFile(fileList):
 
 
 ###########################################################################################################
+# 作用：找到原配置文件中所有IP地址并将其写入config.txt文件中
+# 参数：null
+# return：null
+
+def modifyConfigFile():
+    cfgFileList = readAllCfgFile()  # 读取当前文件夹下所有文件
+
+    if len(cfgFileList) != 0:
+
+        # 读取所有IP
+        tempIpList = []
+        for i in cfgFileList:
+            temp = searchIP(i)
+            for j in temp:
+                tempIpList.append(j)
+
+    # 处理IP列表
+    tempIpList = list(set(tempIpList))
+    ipList = sorted(tempIpList, key=str)
+
+    # 写入config.txt
+    fo = open("config.txt", "w", encoding="utf-8")
+    for line in ipList:
+        if line == ipList[-1]:
+            fo.write(line + "->")
+        else:
+            fo.write(line + "->\n")
+    fo.close()
+
+
+###########################################################################################################
 
 
 def main():
@@ -210,4 +241,21 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    print("************************************************")
+    print("*************如果使用第2种模式，请先输入 3 **********")
+    print("*************只修改IP地址第2位：输入 1    **********")
+    print("*************修改整个IP地址：输入 2       **********")
+    print("*************修改config.txt：输入 3 * *************")
+    print("************************************************\n")
+
+    option = input("请输入你想选择的模式：")
+    while not re.findall('[1-3]+$', option):
+        option = input('\n输入有误！请重新输入：')
+
+    if eval(option) == 1:
+        main()
+    elif eval(option) == 2:
+        main()
+    else:
+        modifyConfigFile()
+        print("已将所有要修改的IP地址自动写入config.txt中，请修改config.txt后重新运行本程序并输入：2")
